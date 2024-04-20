@@ -1,13 +1,11 @@
 ﻿
-using System.Runtime.InteropServices.JavaScript;
 
 int round = 1;
 int cityHealth = 15;
 int manticoreHealth = 10;
 int cannonDamage = 1;
-bool manticoreIsAlive = true;
-bool cityIsAlive = true;
 bool gameOver = false;
+bool manticoreIsAlive = true;
 
 int manticoreLocation = ManticorePlacement(0, 100);
 
@@ -16,9 +14,70 @@ while (!gameOver)
     cannonDamage = ManticoreCannonDamage(round, cannonDamage);
     PlayerInformation(cityHealth, manticoreHealth, round, cannonDamage);
     int cannonShot = Player2Range("Enter desired cannon range: ");
+    Console.WriteLine(HitCheck(manticoreLocation, cannonShot));
 
+    if (cannonShot == manticoreLocation)
+    {
+        manticoreHealth -= cannonDamage;
+        
+        Console.WriteLine("-------------------------------");
+        if (cityHealth == 0)
+        {
+            Console.WriteLine("The city of Consolas has fallen!");
+            Console.WriteLine("-------------------------------");
+            gameOver = true;
+        }
+        if (manticoreHealth <= 0)
+        {
+            Console.WriteLine("The Manticore has been destroyed! The city of Consolas has been saved!");
+            Console.WriteLine("-------------------------------");
+            gameOver = true;
+        }
+        if (manticoreIsAlive)
+        {
+            cityHealth -= 1;
+            round += 1;
+        }
+    }
+
+    else if (cannonShot != manticoreLocation)
+    {
+        if (cityHealth == 0)
+        {
+            Console.WriteLine("The city of Consolas has fallen!");
+            Console.WriteLine("-------------------------------");
+            gameOver = true;
+        }
+        if (manticoreHealth <= 0)
+        {
+            Console.WriteLine("The Manticore has been destroyed! The city of Consolas has been saved!");
+            Console.WriteLine("-------------------------------");
+            gameOver = true;
+        }
+        if (manticoreIsAlive)
+        {
+            cityHealth -= 1;
+            round += 1;
+        }
+    }
 }
 
+string HitCheck(int manticoreLocation, int cannonShot)
+{
+       
+    if (cannonShot == manticoreLocation)
+    {
+        return "That round was a DIRECT HIT!";
+    }
+    else if (cannonShot > manticoreLocation)
+    {
+        return "That round OVERSHOT the target.";
+    }
+    else
+    {
+        return "That round FELL SHORT of the target.";
+    }
+}
 
 int Player2Range(string message)
 {
