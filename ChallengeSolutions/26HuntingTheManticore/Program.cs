@@ -7,12 +7,12 @@ int cannonDamage = 1;
 bool gameOver = false;
 bool manticoreIsAlive = true;
 
-int manticoreLocation = ManticorePlacement(0, 100);
+int manticoreLocation = PlaceManticore();
 
 while (!gameOver)
 {
-    cannonDamage = ManticoreCannonDamage(round, cannonDamage);
-    PlayerInformation(cityHealth, manticoreHealth, round, cannonDamage);
+    cannonDamage = CalculateManticoreCannonDamage();
+    DisplayPlayerInformation();
     int cannonShot = Player2Range("Enter desired cannon range: ");
     Console.WriteLine(HitCheck(manticoreLocation, cannonShot));
 
@@ -97,44 +97,42 @@ int Player2Range(string message)
     }
 }
 
-int ManticoreCannonDamage (int round, int cannonDamage)
+int CalculateManticoreCannonDamage ()
 {
         if(round % 5 == 0 && round % 3 == 0)
         {
             cannonDamage = 10;
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
-            return cannonDamage;
         }
         else if (round % 5 == 0)
         {
             cannonDamage = 5;
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;
-            return cannonDamage;
         }
         else if (round % 3 == 0)
         {
             cannonDamage = 3;
             Console.BackgroundColor = ConsoleColor.Red;
             Console.ForegroundColor = ConsoleColor.Black;
-            return cannonDamage;
+
         }
         else
         {
             cannonDamage = 1;
             Console.ResetColor();
-            return cannonDamage;
         }
+        return cannonDamage;
 }
 
-void PlayerInformation(int cityHealth, int manticoreHealth, int round, int cannonDamage)
+void DisplayPlayerInformation()
 {
     Console.WriteLine($"STATUS: Round: {round}" + $"  City: {cityHealth}/15" + $"  Manticore: {manticoreHealth}");
     Console.WriteLine($"The cannon is expected to deal {cannonDamage} damage this round.");
 }
 
-int ManticorePlacement(int minRange, int maxRange)
+int PlaceManticore()
 { 
     while (true)
     {
