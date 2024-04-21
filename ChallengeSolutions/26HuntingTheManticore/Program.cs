@@ -35,8 +35,8 @@ while (!gameOver)
         }
         if (manticoreIsAlive)
         {
-            cityHealth -= 1;
-            round += 1;
+            cityHealth--;
+            round++;
         }
     }
 
@@ -56,8 +56,8 @@ while (!gameOver)
         }
         if (manticoreIsAlive)
         {
-            cityHealth -= 1;
-            round += 1;
+            cityHealth--;
+            round++;
         }
     }
 }
@@ -90,33 +90,32 @@ int Player2Range(string message)
         {
             return userInput; 
         }
-        else if (userInput < 0 || userInput > 100)
-        {
             Console.WriteLine("Please enter a range within 0 and 100.");
-        }
     }
 }
 
 int CalculateManticoreCannonDamage ()
 {
-        if(round % 5 == 0 && round % 3 == 0)
+    bool isDivisibleBy5 = round % 5 == 0;
+    bool isDivisibleBy3 = round % 3 == 0;
+
+        if(isDivisibleBy5 && isDivisibleBy3)
         {
             cannonDamage = 10;
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
         }
-        else if (round % 5 == 0)
+        else if (isDivisibleBy5)
         {
             cannonDamage = 5;
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;
         }
-        else if (round % 3 == 0)
+        else if (isDivisibleBy3)
         {
             cannonDamage = 3;
             Console.BackgroundColor = ConsoleColor.Red;
             Console.ForegroundColor = ConsoleColor.Black;
-
         }
         else
         {
