@@ -3,13 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_25Countdown</RootNamespace>
+    <RootNamespace>_28Simula_sSoup</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\26HuntingTheManticore\26HuntingTheManticore.csproj" />
-  </ItemGroup>
 
 </Project>
