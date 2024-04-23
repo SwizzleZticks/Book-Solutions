@@ -25,9 +25,9 @@ Arrow ArrowBuild()
 
     FletchingTypes fletching = fletchingType switch
     {
-        "plastic" => FletchingTypes.plastic,
+        "plastic"         => FletchingTypes.plastic,
         "turkey feathers" => FletchingTypes.turkeyfeathers,
-        "goose feathers" => FletchingTypes.goosefeathers
+        "goose feathers"  => FletchingTypes.goosefeathers
     };
     return new Arrow(arrowHead, fletching, arrowLength);
 }
@@ -68,7 +68,7 @@ class Arrow
 
         arrowLengthCost = arrowLength * (float).05;
 
-        totalCost = arrowHeadCost += fletchingCost += arrowLengthCost;
+        totalCost = arrowHeadCost + fletchingCost + arrowLengthCost;
 
         return totalCost;
     }
