@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "29VinFletcher'sArrows", "29
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "30Vin'sTrouble", "30Vin'sTrouble\30Vin'sTrouble.csproj", "{1451B63E-328D-4BA8-9F75-37814B9309E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31ThePropertiesofArrows", "31ThePropertiesofArrows\31ThePropertiesofArrows.csproj", "{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "31ThePropertiesofArrows", "31ThePropertiesofArrows\31ThePropertiesofArrows.csproj", "{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32ArrowFactories", "32ArrowFactories\32ArrowFactories.csproj", "{393ED0B4-8C44-453D-AE93-88893849F6B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
