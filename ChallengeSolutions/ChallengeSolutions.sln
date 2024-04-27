@@ -3,8 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "23TheLawsOfFreach", "TheLawsOfFreach\23TheLawsOfFreach.csproj", "{5D0C23E1-1104-4118-B899-5CFA837FF7A0}"
-EndProject
+
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "24TakingANumber", "25TakingANumber\24TakingANumber.csproj", "{3BC47449-82EF-40F0-9D27-25E28E10E8DF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "25Countdown", "25Countdown\25Countdown.csproj", "{B8FEE173-C5A9-4CAE-A55D-B6563C1527B2}"
@@ -26,6 +25,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "31ThePropertiesofArrows", "31ThePropertiesofArrows\31ThePropertiesofArrows.csproj", "{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32ArrowFactories", "32ArrowFactories\32ArrowFactories.csproj", "{393ED0B4-8C44-453D-AE93-88893849F6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32ThePoint", "32ThePoint\32ThePoint.csproj", "{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33TheColor", "33TheColor\33TheColor.csproj", "{ED45DB66-1715-4770-9367-18AD5F2374F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34TheCard", "34TheCard\34TheCard.csproj", "{07352DB6-02C3-4769-BB48-3C99AA83731E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +86,18 @@ Global
 		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{393ED0B4-8C44-453D-AE93-88893849F6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED45DB66-1715-4770-9367-18AD5F2374F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED45DB66-1715-4770-9367-18AD5F2374F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED45DB66-1715-4770-9367-18AD5F2374F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED45DB66-1715-4770-9367-18AD5F2374F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07352DB6-02C3-4769-BB48-3C99AA83731E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07352DB6-02C3-4769-BB48-3C99AA83731E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07352DB6-02C3-4769-BB48-3C99AA83731E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07352DB6-02C3-4769-BB48-3C99AA83731E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
