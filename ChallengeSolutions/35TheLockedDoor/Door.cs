@@ -52,13 +52,13 @@ namespace TheLockedDoor
                 case "UNLOCK":
                     int guess = currentDoor.GetInt("What is the passcode? ");
                     currentDoor.Unlock(guess);
+                    currentDoor.CurrentState = DoorState.Closed;
                     Console.Clear();
                     break;
                 case "CHANGE CODE":
                     int oldCode = GetInt("What is the current passcode: ");
                     int newCode = GetInt("What do you want to change it to? ");
-                    currentDoor.CodeChange(oldCode, newCode);
-                    currentDoor.PassCode = newCode;
+                    currentDoor.PassCode = currentDoor.CodeChange(oldCode, newCode);
                     Console.Clear();
                     break;
             }
