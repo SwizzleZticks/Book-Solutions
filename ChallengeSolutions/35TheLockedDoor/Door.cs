@@ -7,75 +7,97 @@ namespace TheLockedDoor
 {
     public class Door
     {
-        public int PassCode { get; set; }
+        private int _passCode;
         public DoorState CurrentState { get; set; }
 
         public Door(int passCode, DoorState currentState)
         {
-            this.PassCode = passCode;
+            _passCode = passCode;
             this.CurrentState = currentState;
         }
 
         public static Door SetPassCode()
         {
             Console.Write("Please enter a 4 digit passcode: ");
-            int passCode = Convert.ToInt32(Console.ReadLine());
+            string? passCode = Console.ReadLine();
 
-            bool isValidPasscode = passCode > 999 && passCode < 9999;
+            bool isValidPasscode = passCode?.Length == 4;
 
             while (!isValidPasscode)
             {
                 Console.Clear();
                 Console.Write("Please enter a 4 digit passcode: ");
-                passCode = Convert.ToInt32(Console.ReadLine());
+                passCode = Console.ReadLine();
             }
             Console.Clear();
-            return new Door(passCode, DoorState.Locked);
+            return new Door(Convert.ToInt32(passCode), DoorState.Locked);
+        }
+        public void Unlock(int guess)
+        {
+            if (CurrentState == DoorState.Locked && guess == _passCode)
+            {
+                CurrentState = DoorState.Closed;
+            }
         }
 
-        public void ChangeState(string command, Door currentDoor)
+        public void Open()
         {
-            switch (command)
+            if (CurrentState == DoorState.Locked) 
             {
-                case "OPEN":
-                    CurrentState = DoorState.Opened;
-                    Console.Clear();
-                    break;
-                case "CLOSE":
-                    CurrentState = DoorState.Closed;
-                    Console.Clear();
-                    break;
-                case "LOCK":
-                    CurrentState = DoorState.Locked;
-                    Console.Clear();
-                    break;
-                case "UNLOCK":
-                    int guess = currentDoor.GetInt("What is the passcode? ");
-                    currentDoor.Unlock(guess);
-                    currentDoor.CurrentState = DoorState.Closed;
-                    Console.Clear();
-                    break;
-                case "CHANGE CODE":
-                    int oldCode = GetInt("What is the current passcode: ");
-                    int newCode = GetInt("What do you want to change it to? ");
-                    currentDoor.PassCode = currentDoor.CodeChange(oldCode, newCode);
-                    Console.Clear();
-                    break;
+                Console.WriteLine("This door is still locked please unlock first.");
+                CurrentState = DoorState.Locked;
             }
-        }        
-        public void Unlock(int passCode)
+            else if (CurrentState == DoorState.Opened) 
+            {
+                Console.WriteLine("This door is already opened please choose another action.");
+                CurrentState = DoorState.Opened;
+            }
+            else
+            {
+                CurrentState = DoorState.Opened;
+            }
+        }
+        public void Lock()
         {
-            if (CurrentState == DoorState.Locked && passCode == PassCode)
+            if(CurrentState  == DoorState.Locked)
+            {
+                Console.WriteLine("The door is already locked, please choose another action.");
+                CurrentState = DoorState.Locked;
+            }
+            else if(CurrentState == DoorState.Opened)
+            {
+                Console.WriteLine("Please close the door before locking.");
+                CurrentState = DoorState.Opened;
+            }
+            else
             {
                 CurrentState = DoorState.Locked;
             }
         }
-
-        public int CodeChange(int oldPassCode, int newPassCode)
+        public void Close()
         {
-            if (oldPassCode == newPassCode)
+            if(CurrentState == DoorState.Locked)
             {
-                PassCode = newPassCode;
+                Console.WriteLine("You must unlock the door first before doing anything.");
+                CurrentState = DoorState.Locked;
+            }
+            else if(CurrentState == DoorState.Closed) 
+            {
+                Console.WriteLine("The door is already closed.");
+                CurrentState = DoorState.Closed;
+            }
+            else
+            {
+                CurrentState = DoorState.Closed;
+            }
+        }
+
+        public int CodeChange(int currentCode,int newPassCode)
+        {
+            if (currentCode == newPassCode)
+            {
+                newPassCode = currentCode;
+                CurrentState = DoorState.Locked;
             }
             return newPassCode;
         }
