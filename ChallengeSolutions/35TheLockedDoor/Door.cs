@@ -104,7 +104,7 @@ namespace TheLockedDoor
 
         public int GetInt(string text)
         {
-            System.Console.Write(text);
+            Console.Write(text);
             return Convert.ToInt32(Console.ReadLine());
         }
     }

@@ -23,15 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "30Vin'sTrouble", "30Vin'sTr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "31ThePropertiesofArrows", "31ThePropertiesofArrows\31ThePropertiesofArrows.csproj", "{58F57D13-53B0-42B5-B50F-3E926B7EAB2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32ArrowFactories", "32ArrowFactories\32ArrowFactories.csproj", "{393ED0B4-8C44-453D-AE93-88893849F6B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "32ArrowFactories", "32ArrowFactories\32ArrowFactories.csproj", "{393ED0B4-8C44-453D-AE93-88893849F6B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32ThePoint", "32ThePoint\32ThePoint.csproj", "{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "32ThePoint", "32ThePoint\32ThePoint.csproj", "{74E71C92-E876-40AF-94B6-CB6A5DBD20B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33TheColor", "33TheColor\33TheColor.csproj", "{ED45DB66-1715-4770-9367-18AD5F2374F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "33TheColor", "33TheColor\33TheColor.csproj", "{ED45DB66-1715-4770-9367-18AD5F2374F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34TheCard", "34TheCard\34TheCard.csproj", "{07352DB6-02C3-4769-BB48-3C99AA83731E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "34TheCard", "34TheCard\34TheCard.csproj", "{07352DB6-02C3-4769-BB48-3C99AA83731E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35TheLockedDoor", "35TheLockedDoor\35TheLockedDoor.csproj", "{D7A6DD74-A67C-4770-BF6C-089A00E8EB5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35TheLockedDoor", "35TheLockedDoor\35TheLockedDoor.csproj", "{D7A6DD74-A67C-4770-BF6C-089A00E8EB5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36PasswordValidator", "36PasswordValidator\36PasswordValidator.csproj", "{8EE12ACE-89EE-4D17-8772-F116E152C1DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +41,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D0C23E1-1104-4118-B899-5CFA837FF7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D0C23E1-1104-4118-B899-5CFA837FF7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D0C23E1-1104-4118-B899-5CFA837FF7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D0C23E1-1104-4118-B899-5CFA837FF7A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3BC47449-82EF-40F0-9D27-25E28E10E8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BC47449-82EF-40F0-9D27-25E28E10E8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC47449-82EF-40F0-9D27-25E28E10E8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,6 +101,10 @@ Global
 		{D7A6DD74-A67C-4770-BF6C-089A00E8EB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7A6DD74-A67C-4770-BF6C-089A00E8EB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7A6DD74-A67C-4770-BF6C-089A00E8EB5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE12ACE-89EE-4D17-8772-F116E152C1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE12ACE-89EE-4D17-8772-F116E152C1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE12ACE-89EE-4D17-8772-F116E152C1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE12ACE-89EE-4D17-8772-F116E152C1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
