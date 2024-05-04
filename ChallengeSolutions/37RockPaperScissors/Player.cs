@@ -34,7 +34,7 @@ namespace _37RockPaperScissors
                     PlayerChoice = HandChoice.Scissors;
                     break;
                 default:
-                    Console.WriteLine("That is not a valid choice");
+                    PlayerChoice = HandChoice.None;
                     break;
             }
         }

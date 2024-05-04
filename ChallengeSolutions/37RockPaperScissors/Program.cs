@@ -13,12 +13,12 @@ namespace _37RockPaperScissors
 
             while (gameOn)
             {
-                Records.DisplayInfo();
-
                 firstPlayer.GetChoice("Player 1 choose rock, paper, or scissors: ");
+                Console.Clear();
                 secondPlayer.GetChoice("Player 2 choose rock, paper, or scissors: ");
+                Console.Clear();
 
-                if (firstPlayer.PlayerChoice != HandChoice.None || secondPlayer.PlayerChoice != HandChoice.None)
+                if (firstPlayer.PlayerChoice != HandChoice.None && secondPlayer.PlayerChoice != HandChoice.None)
                 {
                     firstPlayer.isWinner = RPSRound.GetWinner(firstPlayer.PlayerChoice, secondPlayer.PlayerChoice);
 
@@ -37,7 +37,6 @@ namespace _37RockPaperScissors
                             Console.WriteLine();
                         }
                     }
-
                     else
                     {
                         Console.WriteLine("DRAW noone wins!");
@@ -46,6 +45,7 @@ namespace _37RockPaperScissors
                     }
 
                     Records.RoundNumber++;
+                    Records.DisplayInfo();
                 }
             }
         }

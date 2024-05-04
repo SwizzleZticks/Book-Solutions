@@ -15,11 +15,9 @@ namespace _37RockPaperScissors
 
         public static void DisplayInfo()
         {
-            Console.WriteLine();
             Console.WriteLine($"Player 1 total wins: {Player1Score} " + $"   Player 2 total wins: {Player2Score} " + $"   Draws: {DrawCount} ");
             Console.WriteLine($"Round Number: {RoundNumber} ");
             Console.WriteLine("--------------------------------------------------------------------------------------------------------");
-
         } 
     }
 }
