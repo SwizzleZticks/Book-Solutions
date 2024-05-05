@@ -4,6 +4,8 @@ namespace _38FifteenPuzzle
 {
     internal class Program
     {
+        static Random rng = new Random();
+
         static void Main(string[] args)
         {
             List<int> numberPool = (new int[16] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0}).ToList();
@@ -23,14 +25,15 @@ namespace _38FifteenPuzzle
                 }
             }
         }
-        static int GetDeleteRandom(List<int> random)
+        static int GetDeleteRandom(List<int> pool) 
         {
-            Random r = new Random(); // optimize this so it doesn't instantiate a new random everytime
-            int accessIndex = r.Next(0,random.Count);//gets random index from an always shortening list
-            int result = random[accessIndex]; // getting the value at the random index
-            random.RemoveAt(accessIndex);  // removes value at the random index
+            int accessIndex = rng.Next(0,pool.Count);//gets random index from an always shortening list
+            int result = pool[accessIndex]; // getting the value at the random index
+            pool.RemoveAt(accessIndex);  // removes value at the random index
 
             return result;
         }
+
+        
     }
 }
