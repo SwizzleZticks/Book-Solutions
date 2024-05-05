@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35TheLockedDoor", "35TheLoc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "36PasswordValidator", "36PasswordValidator\36PasswordValidator.csproj", "{8EE12ACE-89EE-4D17-8772-F116E152C1DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37RockPaperScissors", "37RockPaperScissors\37RockPaperScissors.csproj", "{E671E003-0007-464A-A1E0-A2525773674D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "37RockPaperScissors", "37RockPaperScissors\37RockPaperScissors.csproj", "{E671E003-0007-464A-A1E0-A2525773674D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38FifteenPuzzle", "38FifteenPuzzle\38FifteenPuzzle.csproj", "{D4750C81-FCA6-440E-8639-DF62B3B8DB64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{E671E003-0007-464A-A1E0-A2525773674D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E671E003-0007-464A-A1E0-A2525773674D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E671E003-0007-464A-A1E0-A2525773674D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4750C81-FCA6-440E-8639-DF62B3B8DB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4750C81-FCA6-440E-8639-DF62B3B8DB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4750C81-FCA6-440E-8639-DF62B3B8DB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4750C81-FCA6-440E-8639-DF62B3B8DB64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
