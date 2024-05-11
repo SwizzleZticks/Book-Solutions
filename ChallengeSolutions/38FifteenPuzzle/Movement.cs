@@ -64,7 +64,7 @@ namespace _38FifteenPuzzle
             }
             else
             {
-                Console.WriteLine("Retard, its only 1 or -1");
+                Console.WriteLine("Its only 1 or -1");
                 return false;
             }
 
