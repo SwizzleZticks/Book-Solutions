@@ -22,7 +22,7 @@ namespace _38FifteenPuzzle
 
         public static void InitializeValues(int[][] matrix)
         {
-            for(int i = 0; i < 4 ; i++)
+            for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
@@ -38,43 +38,12 @@ namespace _38FifteenPuzzle
             {
                 for (int j = 0; j < 4; j++)
                 {
-                Console.Write("| {0,2} " , matrix[j][i]);
+                    Console.Write("| {0,2} ", matrix[j][i]);
                 }
                 Console.WriteLine("|");
                 Console.WriteLine("+----+----+----+----+");
             }
         }
-
-        public static int GetUserChoice()
-        {
-            int userInput = 0;
-
-            while (true)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Please enter the direction you want to move.");
-                Console.WriteLine("1-Up,2-Down,3-Right,4-Left");
-                Console.WriteLine();
-
-                if (!Int32.TryParse(Console.ReadLine(), out userInput))
-                {
-                    Console.WriteLine("Please enter an actual number.");
-                }
-
-                if (userInput < 1 || userInput > 4)
-                {
-                    Console.WriteLine("Please enter a number between 1 and 4."); 
-                }
-                else 
-                {
-                    break;
-                }
-                    
-            }
-
-            return userInput;
-        }
-
         private static int GetDeleteRandom(List<int> pool)
         {
             int accessIndex = rng.Next(0, pool.Count);//gets random index from an always shortening list
@@ -83,5 +52,26 @@ namespace _38FifteenPuzzle
 
             return result;
         }
+
+        public static bool BoardCompleteCheck(int[][] matrix)
+        {
+            bool isComplete = false;
+
+            if (matrix[0][0] == 1 && matrix[0][1] == 2 && matrix[0][2] == 3 && matrix[0][3] == 4)
+            {
+                if (matrix[1][0] == 5 && matrix[1][1] == 6 && matrix[1][2] == 7 && matrix[1][3] == 8)
+                {
+                    if (matrix[2][0] == 9 && matrix[2][1] == 10 && matrix[2][2] == 11 && matrix[2][3] == 12)
+                    {
+                        if (matrix[3][0] == 13 && matrix[3][1] == 14 && matrix[3][2] == 15)
+                        {
+                            isComplete = true;
+                        }
+                    }
+                }
+            }
+            return isComplete;
+        }
     }
 }
+

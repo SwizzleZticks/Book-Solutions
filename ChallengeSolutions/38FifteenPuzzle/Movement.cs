@@ -8,25 +8,6 @@ namespace _38FifteenPuzzle
 {
     public class Movement
     {
-        public static void FindZeroCoordinates(int[][] matrix, out int _x, out int _y)
-        {
-            for (int i = 0; i < 4; i++)
-            { 
-                for (int j = 0; j < 4; j++)
-                {
-                    if (matrix[i][j] == 0)
-                    {
-                        _x = i;
-                        _y = j;
-
-                        return;
-                    }
-                }
-            }
-            _x = -1;
-            _y = -1;
-        }
-
         private static bool Move(int[][] matrix, int dirX, int dirY)
         {
             int zeroX = -1;
@@ -97,6 +78,27 @@ namespace _38FifteenPuzzle
         public static bool MoveZeroLeft(int[][] matrix,int x, int y)
         {
             return Move(matrix, -1, 0);
+        }
+
+        public static int CheckKey()
+        {
+            Console.WriteLine("Please use the arrow keys to move the 0 around");
+
+            ConsoleKeyInfo keyPress = Console.ReadKey();
+
+            switch (keyPress.Key)
+            {
+            case ConsoleKey.UpArrow:
+                return 1;
+            case ConsoleKey.DownArrow:
+                return 2;
+            case ConsoleKey.RightArrow:
+                return 3;
+            case ConsoleKey.LeftArrow:
+                return 4;
+            }
+
+            return 0;
         }
     }
 }
