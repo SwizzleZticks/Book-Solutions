@@ -11,7 +11,7 @@ namespace _38FifteenPuzzle
         public static void FindZeroCoordinates(int[][] matrix, out int _x, out int _y)
         {
             for (int i = 0; i < 4; i++)
-            {
+            { 
                 for (int j = 0; j < 4; j++)
                 {
                     if (matrix[i][j] == 0)
@@ -35,7 +35,7 @@ namespace _38FifteenPuzzle
             int targetX = -1;
             int targetY = -1;
 
-            FindZeroCoordinates(matrix, out zeroX, out zeroY);
+            Player.FindZeroCoordinates(matrix, out zeroX, out zeroY);
 
             if (zeroX == -1 || zeroY == -1)
             {

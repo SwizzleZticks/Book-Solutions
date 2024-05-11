@@ -9,8 +9,8 @@ namespace _38FifteenPuzzle
 {
     public class Game
     {
-        public static Random rng = new Random();
-        public static List<int> numberPool = (new int[16] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0 }).ToList();
+        private static Random rng = new Random();
+        private static List<int> numberPool = (new int[16] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0 }).ToList();
 
         public static void Init(int[][] matrix)
         {
@@ -45,7 +45,37 @@ namespace _38FifteenPuzzle
             }
         }
 
-        static int GetDeleteRandom(List<int> pool)
+        public static int GetUserChoice()
+        {
+            int userInput = 0;
+
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Please enter the direction you want to move.");
+                Console.WriteLine("1-Up,2-Down,3-Right,4-Left");
+                Console.WriteLine();
+
+                if (!Int32.TryParse(Console.ReadLine(), out userInput))
+                {
+                    Console.WriteLine("Please enter an actual number.");
+                }
+
+                if (userInput < 1 || userInput > 4)
+                {
+                    Console.WriteLine("Please enter a number between 1 and 4."); 
+                }
+                else 
+                {
+                    break;
+                }
+                    
+            }
+
+            return userInput;
+        }
+
+        private static int GetDeleteRandom(List<int> pool)
         {
             int accessIndex = rng.Next(0, pool.Count);//gets random index from an always shortening list
             int result = pool[accessIndex]; // getting the value at the random index
