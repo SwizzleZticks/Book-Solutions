@@ -31,6 +31,8 @@ namespace _39Hangman
                 }
                 Console.WriteLine();
             }
+
+            Console.WriteLine();
         }
     }
 }
