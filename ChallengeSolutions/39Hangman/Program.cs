@@ -1,4 +1,7 @@
 ﻿
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
+
 namespace _39Hangman
 {
     internal class Program
@@ -7,6 +10,8 @@ namespace _39Hangman
         {
             char[] word = ['H', 'E', 'L', 'L', 'O'];
             char[] replace = new char[word.Length];
+            char[] incorrect = new char[word.Length];
+            int remaining = 5;
 
             for (int i = 0; i < word.Length; i++)
             {
@@ -17,22 +22,40 @@ namespace _39Hangman
             {
             
             Console.WriteLine("Guess a letter to finish spelling the word.");
-            char? userInput = Convert.ToChar(Console.ReadLine());
+            char userInput = Char.ToUpper(Convert.ToChar(Console.ReadLine()));
+            Console.Clear();
+            Console.Write("Word: ");
 
-                if (word[i] == userInput)
-                {
-                    replace[i] = word[i];
+                for (int j = 0; j < word.Length; ++j)
+                {            
+                    if (word[j] == Char.ToUpper(userInput))
+                    {
+                        replace[j] = word[j];
+                    }
+                    Console.Write(replace[j]);
                 }
-              
-                for (int z = 0; z < word.Length; z++)
+
+                if (word[i] != Char.ToUpper(userInput))
                 {
-                    
-                    Console.Write(replace[z]);
+                    if (incorrect[i] == userInput)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        incorrect[i] = userInput;
+                        remaining--;
+                    }
                 }
-                Console.WriteLine();
+                
+                Console.Write($" | Remaining: {remaining} | ");
+                Console.Write("Incorrect: ");
+                foreach (char c in incorrect)
+                {
+                    Console.Write(c);
+                }
+                Console.WriteLine($" | Last Guess: {userInput} | ");
             }
-
-            Console.WriteLine();
         }
     }
 }
