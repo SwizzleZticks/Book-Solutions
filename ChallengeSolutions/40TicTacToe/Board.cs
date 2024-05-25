@@ -8,8 +8,10 @@ namespace _40TicTacToe
 {
     public class Board
     {
-        private readonly Cell[,] GameBoard = new Cell[3,3];
+        private readonly Cell[,] _board = new Cell[3,3];
 
-        public Cell ContentsOf(int row, int column) => GameBoard[row, column];
+        public Cell ContentsOf(int row, int column) => _board[row, column];
+        public bool IsEmpty(int row, int column) => _board[row, column] == Cell.Empty;
+        public void FillCell(int row, int column, Cell symbol) => _board[row, column] = symbol;
     }
 }
