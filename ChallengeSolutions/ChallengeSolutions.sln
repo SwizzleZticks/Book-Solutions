@@ -45,9 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "40TicTacToe", "40TicTacToe\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "41PackingInventory", "41PackingInventory\41PackingInventory.csproj", "{DC3B93CF-7F0F-4715-BD20-FB19C94DDA99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42LabelingInventory", "42LabelingInventory\42LabelingInventory.csproj", "{2145A54E-9C80-4FAE-AAFD-551C92048A30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "42LabelingInventory", "42LabelingInventory\42LabelingInventory.csproj", "{2145A54E-9C80-4FAE-AAFD-551C92048A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "43TheOldRobot", "43TheOldRobot\43TheOldRobot.csproj", "{A1781E18-0831-4ABE-A20D-E782F593AF88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "43TheOldRobot", "43TheOldRobot\43TheOldRobot.csproj", "{A1781E18-0831-4ABE-A20D-E782F593AF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "44RoboticInterface", "44RoboticInterface\44RoboticInterface.csproj", "{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{A1781E18-0831-4ABE-A20D-E782F593AF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1781E18-0831-4ABE-A20D-E782F593AF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1781E18-0831-4ABE-A20D-E782F593AF88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
