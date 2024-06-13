@@ -24,15 +24,15 @@ namespace _45RoomCoordinates
 
             if (Math.Abs(rowChange) <= 1 && columnChange == 0) 
             { 
-                Console.WriteLine("These rows are adjacent");
+                Console.WriteLine("These coordinates are adjacent");
             }
             if (Math.Abs(columnChange) <= 1 && rowChange == 0) 
             {
-                Console.WriteLine("These columns are adjacent"); 
+                Console.WriteLine("These coordinates are adjacent"); 
             }
             else
             {
-                Console.WriteLine("Nothing adjacent");
+                Console.WriteLine("Coordinates not adjacent");
             }
             
         }
