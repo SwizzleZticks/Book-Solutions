@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace _45RoomCoordinates
 {
-    public readonly struct Coordinate
+    public struct Coordinate
     {
-        public int Row { get; init; }
-        public int Column { get; init; }
+        public int Row { get; }
+        public int Column { get; }
 
         public Coordinate(int row, int column)
         {
@@ -17,7 +17,7 @@ namespace _45RoomCoordinates
             Column = column;
         }
         
-        public static void AdjacentCheck(Coordinate cord, int row, int column)
+        public void AdjacentCheck(Coordinate cord,int row, int column)
         {
             int rowChange = cord.Row - row;
             int columnChange = cord.Column - column;
