@@ -19,21 +19,22 @@ namespace _45RoomCoordinates
         
         public static void AdjacentCheck(Coordinate cord, int row, int column)
         {
+            int rowChange = cord.Row - row;
+            int columnChange = cord.Column - column;
 
-            if(cord.Row - row == -1 || cord.Row - row == 1)
-            {
-                Console.WriteLine("These row coordinates are adjacent");
+            if (Math.Abs(rowChange) <= 1 && columnChange == 0) 
+            { 
+                Console.WriteLine("These rows are adjacent");
             }
-
-            else if(cord.Column - column == -1 || cord.Column - row == 1)
+            if (Math.Abs(columnChange) <= 1 && rowChange == 0) 
             {
-                Console.WriteLine("These column coordinates are adjacent");
+                Console.WriteLine("These columns are adjacent"); 
             }
-
             else
             {
-                Console.WriteLine("Neither column or row are adjacent");
+                Console.WriteLine("Nothing adjacent");
             }
+            
         }
     }
 }

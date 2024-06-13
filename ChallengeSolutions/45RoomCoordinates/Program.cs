@@ -13,12 +13,9 @@ namespace _45RoomCoordinates
             while(true)
             {
                 row = GetInt("Please enter a row coordinate: ");
-                Console.Clear();
                 column = GetInt("Please enter a column coordinate: ");
-                Console.Clear() ;
 
                 Coordinate cords = GetValue();
-                Console.Clear() ;
                 Coordinate.AdjacentCheck(cords, row, column);
             }
         }
@@ -48,6 +45,8 @@ namespace _45RoomCoordinates
                     break;
                 }
             }
+
+            Console.Clear();
             return userInput;
         }
     }
