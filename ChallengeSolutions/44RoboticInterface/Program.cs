@@ -8,7 +8,7 @@
 
             for (int index = 0; index < robot.Commands.Length; index++)
             {
-                string? input = Console.ReadLine().ToLower();
+                string? input = Console.ReadLine()?.ToLower();
 
                 robot.Commands[index] = input switch
                 {

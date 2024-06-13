@@ -16,7 +16,8 @@ namespace _45RoomCoordinates
                 column = GetInt("Please enter a column coordinate: ");
 
                 Coordinate cords = GetValue();
-                Coordinate.AdjacentCheck(cords, row, column);
+                cords.AdjacentCheck(cords, row, column);
+                
             }
         }
 
