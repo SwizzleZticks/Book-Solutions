@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "42LabelingInventory", "42La
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "43TheOldRobot", "43TheOldRobot\43TheOldRobot.csproj", "{A1781E18-0831-4ABE-A20D-E782F593AF88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "44RoboticInterface", "44RoboticInterface\44RoboticInterface.csproj", "{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "44RoboticInterface", "44RoboticInterface\44RoboticInterface.csproj", "{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "45RoomCoordinates", "45RoomCoordinates\45RoomCoordinates.csproj", "{1C9DD0C7-76CD-4108-8045-7A794ABD2A88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B7583AD-6FD1-4C8B-BADC-E57ECA8F8811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9DD0C7-76CD-4108-8045-7A794ABD2A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9DD0C7-76CD-4108-8045-7A794ABD2A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9DD0C7-76CD-4108-8045-7A794ABD2A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9DD0C7-76CD-4108-8045-7A794ABD2A88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
