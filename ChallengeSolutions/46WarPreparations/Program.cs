@@ -14,7 +14,7 @@
             Console.WriteLine(basicSword3);
         }
     }
-    public record Sword
+    public record Sword //can define all the props in parens here and not use constructor
     {
         public SwordMaterial Material { get; set; }
         public GemStone Stone { get; set; }
