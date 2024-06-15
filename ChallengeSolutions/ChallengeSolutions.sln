@@ -53,7 +53,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "44RoboticInterface", "44Rob
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "45RoomCoordinates", "45RoomCoordinates\45RoomCoordinates.csproj", "{1C9DD0C7-76CD-4108-8045-7A794ABD2A88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "46WarPreparations", "46WarPreparations\46WarPreparations.csproj", "{23EE1656-77CE-4EED-991D-714C9F8A2FAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "46WarPreparations", "46WarPreparations\46WarPreparations.csproj", "{23EE1656-77CE-4EED-991D-714C9F8A2FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "47ColoredItems", "47ColoredItems\47ColoredItems.csproj", "{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{23EE1656-77CE-4EED-991D-714C9F8A2FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EE1656-77CE-4EED-991D-714C9F8A2FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23EE1656-77CE-4EED-991D-714C9F8A2FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
