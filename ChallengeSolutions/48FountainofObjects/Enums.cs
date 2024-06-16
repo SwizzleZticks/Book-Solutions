@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace _48FountainofObjects
 {
-    public class Enums
-    {
-        public enum FountaintState
+        public enum FountainState
         {
             Off,
             On
         }
-    }
+        public enum LocationState
+        {
+            Empty,
+            CurrentLocation
+        }
+        public enum GameObject
+        {
+            FountainOfObjects,
+            Entrance
+        }
 }
