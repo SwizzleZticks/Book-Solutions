@@ -18,7 +18,7 @@ namespace _47ColoredItems
     }
 
     public class Sword{}
-    public class  Bow{}
+    public class Bow{}
     public class Axe{}
 
     public class ColoredItem<T>

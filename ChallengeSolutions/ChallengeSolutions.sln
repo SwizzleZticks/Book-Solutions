@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "45RoomCoordinates", "45Room
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "46WarPreparations", "46WarPreparations\46WarPreparations.csproj", "{23EE1656-77CE-4EED-991D-714C9F8A2FAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "47ColoredItems", "47ColoredItems\47ColoredItems.csproj", "{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "47ColoredItems", "47ColoredItems\47ColoredItems.csproj", "{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "48FountainofObjects", "48FountainofObjects\48FountainofObjects.csproj", "{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
