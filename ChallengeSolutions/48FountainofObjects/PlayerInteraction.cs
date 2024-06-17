@@ -8,20 +8,19 @@ namespace _48FountainofObjects
 {
     public interface IPlayerInteraction
     {
-        public void Interact(FountainofObjectsGame game);
+        public void Interact(FountainOfObjectsGame game);
     }
 
     public class EnableFountain : IPlayerInteraction
     {
-        public void Interact(FountainofObjectsGame game)
+        public void Interact(FountainOfObjectsGame game)
         {
-            game.FountainState = FountainState.On;
-            Console.Write("You hear the rushing waters from the Fountain of Objects. It has been reactivated!");
+
         }
     }
     public class ExitCave : IPlayerInteraction
     {
-        public void Interact(FountainofObjectsGame game)
+        public void Interact(FountainOfObjectsGame game)
         {
             Console.WriteLine("");
         }
