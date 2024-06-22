@@ -1,7 +1,7 @@
 ﻿using _48FountainofObjects;
 
 FountainOfObjectsGame game = GetGameSize();
-game.Run(game);
+game.Run();
 
 FountainOfObjectsGame GetGameSize()
 {
