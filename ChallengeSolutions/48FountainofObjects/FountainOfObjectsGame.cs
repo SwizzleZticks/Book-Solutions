@@ -21,16 +21,22 @@ namespace _48FountainofObjects
             _senses = new ISense[]
             {
                 new LightInEntranceSense(),
-                new FountainSense()
+                new FountainSense(),
+                new PitSense()
             };
         }
-        public void Run()
+        public void Run(FountainOfObjectsGame game)
         {
             while (!HasWon && Player.IsAlive)
             {
                 DisplayStatus();
                 ICommand command = GetCommand();               
                 command.Execute(this);
+
+                if (CurrentRoom == RoomType.Pit)
+                {
+                    Player.Kill("You have fallen in a pit");
+                }
 
                 foreach (Monster monster in Monsters)
                     if (monster.Location == Player.Location && monster.IsAlive) monster.Activate(this);

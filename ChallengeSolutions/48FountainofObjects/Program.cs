@@ -1,7 +1,7 @@
 ﻿using _48FountainofObjects;
 
 FountainOfObjectsGame game = GetGameSize();
-game.Run();
+game.Run(game);
 
 FountainOfObjectsGame GetGameSize()
 {
@@ -46,6 +46,7 @@ FountainOfObjectsGame CreateSmallGame()
     Location start = new Location(0, 0);
     map.SetRoomTypeAtLocation(start, RoomType.Entrance);
     map.SetRoomTypeAtLocation(new Location(0, 2), RoomType.Fountain);
+    map.SetRoomTypeAtLocation(new Location(2, 3), RoomType.Pit);
 
     Monster[] monsters = new Monster[] { };
 
@@ -57,6 +58,8 @@ FountainOfObjectsGame CreateMediumGame()
     Location start = new Location(0, 0);
     map.SetRoomTypeAtLocation(start, RoomType.Entrance);
     map.SetRoomTypeAtLocation(new Location(0, 2), RoomType.Fountain);
+    map.SetRoomTypeAtLocation(new Location(2, 3), RoomType.Pit);
+    map.SetRoomTypeAtLocation(new Location(1, 1), RoomType.Pit);
 
     Monster[] monsters = new Monster[] { };
 
@@ -66,8 +69,13 @@ FountainOfObjectsGame CreateLargeGame()
 {
     Map map = new Map(8, 8);
     Location start = new Location(0, 0);
+
     map.SetRoomTypeAtLocation(start, RoomType.Entrance);
     map.SetRoomTypeAtLocation(new Location(0, 2), RoomType.Fountain);
+    map.SetRoomTypeAtLocation(new Location(2, 3), RoomType.Pit);
+    map.SetRoomTypeAtLocation(new Location(1, 1), RoomType.Pit);
+    map.SetRoomTypeAtLocation(new Location(1, 2), RoomType.Pit);
+    map.SetRoomTypeAtLocation(new Location(2, 2), RoomType.Pit);
 
     Monster[] monsters = new Monster[] { };
 

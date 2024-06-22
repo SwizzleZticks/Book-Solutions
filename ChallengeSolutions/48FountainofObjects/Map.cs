@@ -45,6 +45,7 @@ namespace _48FountainofObjects
         Normal,
         Entrance,
         Fountain,
+        Pit,
         OffTheMap
     }
 }
