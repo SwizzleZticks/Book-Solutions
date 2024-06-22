@@ -23,7 +23,8 @@ namespace _48FountainofObjects
                 new LightInEntranceSense(),
                 new FountainSense(),
                 new PitSense(),
-                new MaelsromSense()
+                new MaelsromSense(),
+                new AmarokSense()
             };
         }
         public void Run()

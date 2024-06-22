@@ -50,7 +50,8 @@ FountainOfObjectsGame CreateSmallGame()
     
     Monster[] monsters = new Monster[] 
     {
-        new Maelstrom(new Location(2, 0))
+        new Maelstrom(new Location(2, 0)),
+        new Amarok(new Location(0, 3))
     };
 
     return new FountainOfObjectsGame(new Player(start), map, monsters);
@@ -66,7 +67,9 @@ FountainOfObjectsGame CreateMediumGame()
 
     Monster[] monsters = new Monster[]
     {
-        new Maelstrom(new Location(2, 0))
+        new Maelstrom(new Location(2, 0)),
+        new Amarok(new Location(3, 3)),
+        new Amarok(new Location(1, 3))
     };
 
     return new FountainOfObjectsGame(new Player(start), map, monsters);
@@ -86,7 +89,10 @@ FountainOfObjectsGame CreateLargeGame()
     Monster[] monsters = new Monster[]
     {
         new Maelstrom(new Location(2, 0)),
-        new Maelstrom(new Location(3,3))
+        new Maelstrom(new Location(3,3)),
+        new Amarok(new Location(3, 3)),
+        new Amarok(new Location(1, 3)),
+        new Amarok(new Location(3, 1)),
     };
 
     return new FountainOfObjectsGame(new Player(start), map, monsters);
