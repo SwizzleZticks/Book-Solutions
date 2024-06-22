@@ -19,10 +19,10 @@ namespace _48FountainofObjects
             if (GetRoomTypeAtLocation(new Location(location.Row - 1, location.Column + 1)) == roomType) return true;
             if (GetRoomTypeAtLocation(new Location(location.Row, location.Column - 1)) == roomType) return true;
             if (GetRoomTypeAtLocation(new Location(location.Row, location.Column)) == roomType) return true;
-            if (GetRoomTypeAtLocation(new Location(location.Row, location.Column + 1)) == roomType) return true;
+            if (GetRoomTypeAtLocation(new Location(location.Row, location.Column + 1)) == roomType) return true;    
             if (GetRoomTypeAtLocation(new Location(location.Row + 1, location.Column - 1)) == roomType) return true;
             if (GetRoomTypeAtLocation(new Location(location.Row + 1, location.Column)) == roomType) return true;
-            if (GetRoomTypeAtLocation(new Location(location.Row + 1, location.Column + 1)) == roomType) return true;
+            if (GetRoomTypeAtLocation(new Location(location.Row + 1, location.Column + 1)) == roomType) return true; 
             return false;
         }
 
@@ -46,6 +46,6 @@ namespace _48FountainofObjects
         Entrance,
         Fountain,
         Pit,
-        OffTheMap
+        OffTheMap,
     }
 }
