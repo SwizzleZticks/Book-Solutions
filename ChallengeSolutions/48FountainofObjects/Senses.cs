@@ -35,5 +35,24 @@ namespace _48FountainofObjects
     {
         public bool CanSense(FountainOfObjectsGame game) => game.Map.HasNeighborWithType(game.Player.Location, RoomType.Pit);
         public void DisplaySense(FountainOfObjectsGame game) => ConsoleHelper.WriteLine("You feel a draft there is a pit in a nearby room.", ConsoleColor.Yellow);
-    }        
+    }
+    
+    public class MaelsromSense : ISense
+    {
+        public bool CanSense(FountainOfObjectsGame game)
+        {
+            foreach (Monster monster in game.Monsters)
+                {
+                    if (monster is Maelstrom && monster.IsAlive)
+                    {
+                        int rowDifference = Math.Abs(monster.Location.Row - game.Player.Location.Row);
+                        int columnDifference = Math.Abs(monster.Location.Column - game.Player.Location.Column);
+
+                    if (rowDifference <= 1 && columnDifference <= 1) return true;
+                    }
+                }
+            return false;
+        }
+        public void DisplaySense(FountainOfObjectsGame game) => ConsoleHelper.WriteLine("You hear a growling and groaning of a maelstrom nearby.", ConsoleColor.Yellow);
+    }
 }
