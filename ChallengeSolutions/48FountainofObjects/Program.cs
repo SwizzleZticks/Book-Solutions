@@ -2,7 +2,7 @@
 
 FountainOfObjectsGame game = GetGameSize();
 game.Run();
-
+ 
 FountainOfObjectsGame GetGameSize()
 {
     bool isValid;
@@ -47,8 +47,11 @@ FountainOfObjectsGame CreateSmallGame()
     map.SetRoomTypeAtLocation(start, RoomType.Entrance);
     map.SetRoomTypeAtLocation(new Location(0, 2), RoomType.Fountain);
     map.SetRoomTypeAtLocation(new Location(2, 3), RoomType.Pit);
-
-    Monster[] monsters = new Monster[] { };
+    
+    Monster[] monsters = new Monster[] 
+    {
+        new Maelstrom(new Location(2, 0))
+    };
 
     return new FountainOfObjectsGame(new Player(start), map, monsters);
 }
@@ -61,7 +64,10 @@ FountainOfObjectsGame CreateMediumGame()
     map.SetRoomTypeAtLocation(new Location(2, 3), RoomType.Pit);
     map.SetRoomTypeAtLocation(new Location(1, 1), RoomType.Pit);
 
-    Monster[] monsters = new Monster[] { };
+    Monster[] monsters = new Monster[]
+    {
+        new Maelstrom(new Location(2, 0))
+    };
 
     return new FountainOfObjectsGame(new Player(start), map, monsters);
 }
@@ -77,7 +83,11 @@ FountainOfObjectsGame CreateLargeGame()
     map.SetRoomTypeAtLocation(new Location(1, 2), RoomType.Pit);
     map.SetRoomTypeAtLocation(new Location(2, 2), RoomType.Pit);
 
-    Monster[] monsters = new Monster[] { };
+    Monster[] monsters = new Monster[]
+    {
+        new Maelstrom(new Location(2, 0)),
+        new Maelstrom(new Location(3,3))
+    };
 
     return new FountainOfObjectsGame(new Player(start), map, monsters);
 }
