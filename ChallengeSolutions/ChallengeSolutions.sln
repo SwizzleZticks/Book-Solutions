@@ -57,7 +57,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "46WarPreparations", "46WarP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "47ColoredItems", "47ColoredItems\47ColoredItems.csproj", "{D4A7EE28-08C9-4687-8B98-BC8FEAA0DD8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "48FountainofObjects", "48FountainofObjects\48FountainofObjects.csproj", "{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "48FountainofObjects", "48FountainofObjects\48FountainofObjects.csproj", "{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "49TheRobotPilot", "49TheRobotPilot\49TheRobotPilot.csproj", "{06D0768C-06F1-4A40-92BA-610D049EFB04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D0768C-06F1-4A40-92BA-610D049EFB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D0768C-06F1-4A40-92BA-610D049EFB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D0768C-06F1-4A40-92BA-610D049EFB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D0768C-06F1-4A40-92BA-610D049EFB04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
