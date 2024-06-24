@@ -17,22 +17,22 @@ namespace _51ListofCommands
                 switch (input)
                 {
                     case "on":
-                        new OnCommand();
+                        robot.Commands.Add(new OnCommand());
                         break;
                     case "off":
-                        new OffCommand();
+                        robot.Commands.Add(new OffCommand());
                         break;
                     case "north":
-                        new NorthCommand();
+                        robot.Commands.Add(new NorthCommand());
                         break;
                     case "south":
-                        new SouthCommand();
+                        robot.Commands.Add(new SouthCommand());
                         break;
                     case "west":
-                        new WestCommand();
+                        robot.Commands.Add(new WestCommand());
                         break;
                     case "east":
-                        new EastCommand();
+                        robot.Commands.Add(new EastCommand());
                         break;
                     case "stop":
                         break;                      
