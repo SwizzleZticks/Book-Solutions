@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "49TheRobotPilot", "49TheRob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "50TimeintheCavern", "50TimeintheCavern\50TimeintheCavern.csproj", "{6C64671F-8827-49A7-92E8-78404EC8228B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "51ListofCommands", "51ListofCommands\51ListofCommands.csproj", "{9A7D6593-E383-4E05-BA56-26335D22F14F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{6C64671F-8827-49A7-92E8-78404EC8228B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C64671F-8827-49A7-92E8-78404EC8228B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C64671F-8827-49A7-92E8-78404EC8228B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
