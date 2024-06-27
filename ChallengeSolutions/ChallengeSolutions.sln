@@ -59,11 +59,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "47ColoredItems", "47Colored
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "48FountainofObjects", "48FountainofObjects\48FountainofObjects.csproj", "{FD97C0BF-7D11-4971-8D8C-3A52421CF48A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "49TheRobotPilot", "49TheRobotPilot\49TheRobotPilot.csproj", "{06D0768C-06F1-4A40-92BA-610D049EFB04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "49TheRobotPilot", "49TheRobotPilot\49TheRobotPilot.csproj", "{06D0768C-06F1-4A40-92BA-610D049EFB04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "50TimeintheCavern", "50TimeintheCavern\50TimeintheCavern.csproj", "{6C64671F-8827-49A7-92E8-78404EC8228B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "50TimeintheCavern", "50TimeintheCavern\50TimeintheCavern.csproj", "{6C64671F-8827-49A7-92E8-78404EC8228B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "51ListofCommands", "51ListofCommands\51ListofCommands.csproj", "{9A7D6593-E383-4E05-BA56-26335D22F14F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "51ListofCommands", "51ListofCommands\51ListofCommands.csproj", "{9A7D6593-E383-4E05-BA56-26335D22F14F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "52&53TheFued", "52TheFued\52&53TheFued.csproj", "{BBF693C5-22CB-4F36-9BCE-D4C234A2CBA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "54SaferNumberCrunching", "54SaferNumberCrunching\54SaferNumberCrunching.csproj", "{F4094887-BA2C-469A-B654-FC093C22EB51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +199,14 @@ Global
 		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A7D6593-E383-4E05-BA56-26335D22F14F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF693C5-22CB-4F36-9BCE-D4C234A2CBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF693C5-22CB-4F36-9BCE-D4C234A2CBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF693C5-22CB-4F36-9BCE-D4C234A2CBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF693C5-22CB-4F36-9BCE-D4C234A2CBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4094887-BA2C-469A-B654-FC093C22EB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4094887-BA2C-469A-B654-FC093C22EB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4094887-BA2C-469A-B654-FC093C22EB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4094887-BA2C-469A-B654-FC093C22EB51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
