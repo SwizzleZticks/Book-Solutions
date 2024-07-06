@@ -9,10 +9,6 @@
 
             while (true)
             {
-                int randomNumber = random.Next(0,10);
-
-                usedNumbers.Add(randomNumber);
-
                 try
                 {
                     Console.Write("Enter a number between 0 and 9: ");
@@ -24,6 +20,8 @@
                 {
                     Console.WriteLine(ex);                   
                 }
+
+                usedNumbers.Add(random.Next(0,10));
             }           
         }
     }
