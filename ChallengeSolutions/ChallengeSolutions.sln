@@ -75,6 +75,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "56ExeptisGame", "56ExeptisG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "57TheSieve", "57TheSieve\57TheSieve.csproj", "{D890E208-5D00-4617-8A7A-1CFA4F0A9A3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "58CharberryTrees", "58CharberryTrees\58CharberryTrees.csproj", "{1E3B7BFD-18A5-41B5-91D2-CF3EB98EFF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "59TheLambdaSieve", "59TheLambdaSieve\59TheLambdaSieve.csproj", "{D239E311-E14E-40E7-8FBB-CBA6B612D5E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +229,14 @@ Global
 		{D890E208-5D00-4617-8A7A-1CFA4F0A9A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D890E208-5D00-4617-8A7A-1CFA4F0A9A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D890E208-5D00-4617-8A7A-1CFA4F0A9A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3B7BFD-18A5-41B5-91D2-CF3EB98EFF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3B7BFD-18A5-41B5-91D2-CF3EB98EFF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3B7BFD-18A5-41B5-91D2-CF3EB98EFF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3B7BFD-18A5-41B5-91D2-CF3EB98EFF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D239E311-E14E-40E7-8FBB-CBA6B612D5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D239E311-E14E-40E7-8FBB-CBA6B612D5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D239E311-E14E-40E7-8FBB-CBA6B612D5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D239E311-E14E-40E7-8FBB-CBA6B612D5E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
