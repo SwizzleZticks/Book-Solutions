@@ -17,7 +17,6 @@
                 1 => new Sieve(x => x % 2 == 0),
                 2 => new Sieve(x => x > 0),
                 3 => new Sieve(x => x % 10 == 0)
-
             };
 
             while (true)
