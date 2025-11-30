@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11222.15 d18.0
+VisualStudioVersion = 18.0.11222.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "24TakingANumber", "25TakingANumber\24TakingANumber.csproj", "{3BC47449-82EF-40F0-9D27-25E28E10E8DF}"
 EndProject
@@ -80,6 +80,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "59TheLambdaSieve", "59TheLambdaSieve\59TheLambdaSieve.csproj", "{D239E311-E14E-40E7-8FBB-CBA6B612D5E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "60TheLongGame", "60TheLongGame\60TheLongGame.csproj", "{7FE9B8FA-E2D8-4303-8EEE-AA8B4C149C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "61ThePotionMasterOfPattren", "61ThePotionMasterOfPattren\61ThePotionMasterOfPattren.csproj", "{DFB068EB-8A78-4ACC-9372-632A970BAD7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{7FE9B8FA-E2D8-4303-8EEE-AA8B4C149C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FE9B8FA-E2D8-4303-8EEE-AA8B4C149C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FE9B8FA-E2D8-4303-8EEE-AA8B4C149C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB068EB-8A78-4ACC-9372-632A970BAD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB068EB-8A78-4ACC-9372-632A970BAD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB068EB-8A78-4ACC-9372-632A970BAD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB068EB-8A78-4ACC-9372-632A970BAD7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

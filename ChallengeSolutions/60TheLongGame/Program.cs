@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.Write("Enter your name: ");
-            string? userName = Console.ReadLine();
-            int? playerScore = 0;
+            string userName = Console.ReadLine()!;
+            int playerScore = 0;
 
             if (File.Exists($"{userName}.txt"))
             {
